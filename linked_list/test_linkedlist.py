@@ -23,6 +23,10 @@ class test_function(unittest.TestCase):
         l = list.Linked_List(list.Node(3))
         r = l.list_insert_at(4,0)
         self.assertEqual(r.index,0)
+    def test_list_delete_node(self):
+        l = list.Linked_List(list.Node(3))
+        r = l.list_insert_at(4,11)
+        self.assertEqual(r.status,1)
     
     
 

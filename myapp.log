@@ -92,3 +92,43 @@ INFO:list:Entering list_delete_end
 INFO:list:Exiting list_delete_end
 INFO:list:Entering list_delete_node
 INFO:list:Exiting list_delete_node
+INFO:__main__:Started
+INFO:list:creating a node
+INFO:list:creating a node
+INFO:list:Entering list_prepend
+INFO:list:creating a node
+INFO:list:Exiting list_prepend
+INFO:list:entering traverse list
+INFO:list:Exited list
+INFO:list:Entering list_append
+INFO:list:creating a node
+INFO:list:Exiting list_append
+INFO:list:Entering size_of_list
+INFO:list:Exiting size of list
+INFO:list:entering traverse list
+INFO:list:Exited list
+INFO:list:Entering list_delete_node
+INFO:list:Entering size_of_list
+INFO:list:Exiting size of list
+INFO:list:Exiting list_delete_node
+INFO:list:entering traverse list
+INFO:list:Exited list
+INFO:list:Entering list_reverse
+INFO:list:Exiting list_reverse
+INFO:list:Entering display_list
+INFO:list:Exiting display_list
+INFO:list:Entering list_insert_at
+INFO:list:creating a node
+INFO:list:Entering size_of_list
+INFO:list:Exiting size of list
+ERROR:list:The given exceeds the size of list
+INFO:list:Exiting list_insert_at
+INFO:list:Entering display_list
+INFO:list:Exiting display_list
+INFO:list:Entering list_delete_end
+INFO:list:Exiting list_delete_end
+INFO:list:Entering list_delete_node
+INFO:list:Entering size_of_list
+INFO:list:Exiting size of list
+ERROR:list:The given position exceeds list size
+INFO:list:Exiting list_delete_node

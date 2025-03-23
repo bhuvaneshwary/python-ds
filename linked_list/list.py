@@ -121,6 +121,12 @@ class Linked_List:
                     prev = self.head
                     a = self.head.next
                     i =1
+                    size = self.size_of_list()
+                    if position > size :
+                          logger.error("The given position exceeds list size")
+                          ret = result.ret_val("error","deletion unsuccessful : ",-1)
+                          logger.info("Exiting list_delete_node")
+                          return ret
                     for i in range (1,position-1):
                         a = a.next
                         prev = prev.next
