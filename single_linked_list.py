@@ -54,6 +54,20 @@ class Linked_List:
                   a = a.next
                   prev = prev.next
            prev.next = None
+    def list_reverse(self):
+        prev = None
+        current = self.head
+        while current is not None:
+            next = current.next
+            current.next = prev
+            prev = current
+            current = next
+        self.head = prev
+    def display_list(self):
+        first = self.head
+        while(first):
+            print (first.data,end=" ")
+            first = first.next
 
 
 n1 = Node(5)
@@ -67,3 +81,6 @@ sll.list_append(5)
 sll.traverse_list()
 sll.list_delete_node(1)
 sll.traverse_list()
+sll.list_reverse()
+print("reversed list : ")
+sll.display_list()
