@@ -15,7 +15,17 @@ class test_function(unittest.TestCase):
         l = list.Linked_List(list.Node(100))
         r = l.list_insert_at(3,41000)
         self.assertEqual(r.index,-1)
-        
+    def test_list_insert_at_valid_index(self):
+        l = list.Linked_List(list.Node(3))
+        r = l.list_insert_at(4,1)
+        self.assertEqual(r.index,1)
+    def test_list_insert_at_zero_index(self):
+        l = list.Linked_List(list.Node(3))
+        r = l.list_insert_at(4,0)
+        self.assertEqual(r.index,0)
+    
+    
+
 
 
 

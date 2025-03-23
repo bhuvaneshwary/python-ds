@@ -97,13 +97,22 @@ class Linked_List:
                     if index > size :
                         logger.error("The given exceeds the size of list")
                         ret = result.ret_val("error","inserting unsuccessful",-1)
+                        logger.info("Exiting list_insert_at")
                         return ret
+
+                    elif index == 0:
+                        logger.info("The index is 0 , prepending")
+                        self.list_prepend(data)
+                        ret = result.ret_val("success","inserted at 0",0)
+                        logger.info("Exiting list_insert_at")
+                        return ret
+
 
                     for i in range(1,index-1):
                         a = a.next
                     new_node.next = a.next
                     a.next = new_node
-                    ret = result.ret_val("success","inserted successfully at : ",index)
+                    ret = result.ret_val("success","inserted successfully at : ",1)
                     logger.info("Exiting list_insert_at")
                     return ret
 
