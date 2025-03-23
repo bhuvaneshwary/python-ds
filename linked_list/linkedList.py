@@ -1,8 +1,17 @@
 #initialising class node 
 import result
 import list
+import logging
+logger = logging.getLogger(__name__)
+
+
 
 def main():
+
+    logging.basicConfig(filename='myapp.log', level=logging.INFO)
+    
+    
+    logger.info('Started')
 
     sll = list.Linked_List(list.Node(5))
     n2 = list.Node(10)
